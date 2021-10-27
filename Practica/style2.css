@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color:#000;
+    background-color: #daf1f9;
+}
+.contenedor{
+    width:90%;
+    max-width:1000px;
+    margin:20px auto;
+    display:grid;
+    grid-gap:20px;
+    grid-template-areas: "header header header"
+                        "contenido contenido aside"
+                        "widget-1 widget-2 aside"
+                        "footer footer footer";
+}
+
+.contendor > div,
+.contenedor header,
+.contenedor .contenido,
+.contenedor .aside,
+.contenedor .widget-1,
+.contenedor .widget-2,
+.contenedor .footer{
+    background-color:#fff;
+    padding:20px;
+    border-radius:4px;
+}
+
+.contenedor header{
+    background-color:#5f4e9e;
+    color:#fff;
+    grid-area: header;
+}
+
+.contenedor .contenido{
+    line-height:30px;
+    grid-area:contenido;
+    display:grid;
+    grid-gap:10px
+}
+
+.contenedor .aside{
+    grid-area:aside;
+    background-color:#cfee91;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100px;
+}
+.contenedor .widget-1{
+    background-color:#f9d89c;
+    height:100px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    grid-area:widget-1;
+}
+.contenedor .widget-2{
+    background-color:#f9d89c;
+    grid-area:widget-2;
+    height:100px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.contenedor .footer{
+    background-color:#82c4c3;
+    grid-area:footer;
+}
+
+@media screen and (max-width:780px){
+    .contenedor{
+        grid-template-areas: "header header header"
+                        "contenido contenido contenido"
+                        "aside aside aside"
+                        "widget-1 widget-1 widget-2 "
+                        "footer footer footer";
+    }
+}
+
+@media screen and (max-width:500px){
+    .contenedor .aside{
+        display:none;
+    }
+    .contenedor{
+        grid-template-areas: "header header header"
+                        "contenido contenido contenido"
+                        "widget-1 widget-1 widget-2 "
+                        "footer footer footer";
+    }
+
+    
+}

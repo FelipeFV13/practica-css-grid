@@ -1,0 +1,8 @@
+.contenedor{
+    display:grid;
+    grid-gap:20px;
+    /* con el valor de auto-fit nuestros elemnetos se adecuan al espacio que tenga el contenedro abarcandolo.
+    
+    COn auto-fill nuestros elementos solo abrcan el espacio que necesitan y no ocupan el espacio sobrante*/
+    grid-template-columns:repeat(auto-fit,minmax(100px,1fr));
+}

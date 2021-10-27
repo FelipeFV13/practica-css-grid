@@ -1,0 +1,43 @@
+.contenedor{
+    display:grid;
+    grid-gap:20px;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows:repeat(4,1fr);
+}
+
+.contenedor .item{
+    background-color:#ef832a;
+    /* el posicionamiento con grid, es muy curioso ya que se utilizan las propiedades de grid-column-star/end y grid-row-start/end, en ellas se inicializa donde va a ir nuestro elemento en la grid, pero apartir de las lineas,para especificar la cantidad de columnas se usa la palabra clave span */
+    /* grid-column-start:2;
+    grid-column-end:4;
+    grid-row-start:2;
+    grid-row-end:3;
+
+    /* esto es un atajo en la cual el primer valor es el inico y el segundo donde termina */
+
+ grid-column:2/-1;
+ grid-row:2/span 1;
+
+ /* grid-area:1/2/2/span 2; */
+ /* este es el atajo muy reducido ya que el primer valor que ingresamos es el grid-row-start, el segundo es el grid-column-start, el tercero es el grid-row-end,y el cuarto es el  */
+}
+
+@media screen and (max-width:500px){
+    .contenedor{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .contenedor .item{
+        grid-column:1/span 2;
+        grid-row:2/span 1;
+    }
+}
+
+@media screen and (max-width:400px){
+    .contenedor{
+        grid-template-columns:1fr 1fr;
+    }
+    .contenedor .item{
+        display:none;
+    }
+}

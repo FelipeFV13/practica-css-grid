@@ -1,0 +1,5 @@
+.contenedor{
+    display:grid;
+    grid-gap:20px; 
+    grid-template-columns: repeat(5,1fr);/* Con esta funcion no tenemos la necesidad de escribir todos los valores, el primer valor es cuantas veces se repite, y el segundo es valor el cual se va repetir */
+}

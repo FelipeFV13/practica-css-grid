@@ -1,0 +1,12 @@
+.contenedor{
+    height:700px;
+    display:grid;
+    grid-template-columns:repeat(3,150px);
+    grid-template-rows: repeat(3,150px);
+
+    /* Para posicionar nuestra grid usamos la propiedad de justify-content y align-content */
+    /* alinear la grid horizintalmente, space-evenly es un nuevo valor para nuestra propiedad, con esta nos da una ceparacion igual a todos nuestros elemntos */
+    justify-content:space-evenly;
+    /* alinear la grid verticalmente, la grid no nuestros elemnetos dentro de la grid */
+    align-content:space-between ;
+}

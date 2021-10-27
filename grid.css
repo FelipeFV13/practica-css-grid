@@ -1,0 +1,8 @@
+.contenedor{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr ;/* con esta propiedad nosotros colocamos cuantas columnas queremos ver en nuestra grid, los valores a ingresar serian cuanto va a ocupar cada columna (escribir el valor en fr o fracciones ya que le da el tamaño del espacio disponible en el momento, tambien se puede escribir en px, pero se ajusta mejor los elementos a fr) */
+    grid-template-rows: 150px 300px;/* con esta propiedad le especificamos que tamoño va a tener cada fila de nuestra columna, en caso de que no especifiquemos estos valores, el tamaño de nuestros componenetes dependera de lo que contenga a dentro */
+    grid-gap:10px;/* con la propiedad flex-gap, podemos especificar el espacio entre cada contenedor hijo */
+
+    
+}

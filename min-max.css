@@ -1,0 +1,6 @@
+.contenedor{
+    display: grid;
+    grid-gap:20px;
+    grid-template-columns: minmax(300px,1fr) 1fr;
+    grid-template-rows:minmax(150px,auto) 400px;/* con la funcion minmax() podemos especificar el tamaño minimo y maximo de nuestro contenedor ya sea en la fila o en la columna, una buena practica seria poner en valor auto el tamaño maximo, porque este se ajusta deacuerdo a su contenido */
+}

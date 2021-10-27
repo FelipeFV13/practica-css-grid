@@ -1,0 +1,23 @@
+.contenedor{
+    display:grid;
+    grid-gap:20px;
+    grid-template-columns:2fr 1fr 2fr;
+    grid-template-rows:2fr 1fr 2fr;
+
+    /* Todos los elementos que esten fuera de la grid explicita osea los elementos pertenecientes a la grid implicita tendrad el valor que allamos colocado en nuestra propiedad de grid-auto-rows */
+    grid-auto-rows:300px;
+
+    /* Cambiar el flujo de nuestra grid, por defecto esta trae el valor de rows, osea los elementos se posicionan por filas, pero tambien le podemos dar el valor de columns */
+    /* Cuando quedan espacios vacios entre los elemntos podemos usar una propiedad muy chever la cual se llama dense, y lo qeu hace es que a traer elementos para que ocupen ese espacio. */
+    grid-auto-flow:row dense;
+}
+
+.contenedor .span2{
+    background-color:#2e94b9;
+    grid-column:span 2;
+}
+
+.contenedor .span3{
+    background-color:#cc435f;
+    grid-column:span 3;
+}

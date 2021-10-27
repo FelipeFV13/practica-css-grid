@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor{
+    display: grid;
+    grid-gap:20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(3,200px);
+
+    /* alinear Horizontalmente, los elementos solo van a ocupan el espacio respecto a su conteneido */
+    justify-items:center;
+    /* alinaer Verticalmente */
+    align-items: center;
+}
+
+
+/* Cuando queramos darle posicion solo a un elemnto utilizamos las propiedades justify-self y align-self */
+.contenedor .items{
+    background-color:#56a7a7;
+    /* alineación Horizontal, que valorres podemos usar?, center, start, end, stretch.*/
+    justify-self:stretch;
+    /* Alineación Vertical */
+    align-self:center;
+}
